@@ -13,6 +13,7 @@
         public DbSet<Sale> Sales => Set<Sale>();
         public DbSet<TransferStockLog> TransferStockLogs => Set<TransferStockLog>();
         public DbSet<User> Users => Set<User>();
+        public DbSet<Customer> Customers => Set<Customer>();
         public DbSet<Warehouse> Warehouses => Set<Warehouse>();
         public DbSet<ProductWarehouse> ProductWarehouse => Set<ProductWarehouse>();
 
@@ -27,6 +28,7 @@
             modelBuilder.Entity<Sale>().HasKey(x => x.SalesId);
             modelBuilder.Entity<TransferStockLog>().HasKey(x => x.TransferId);
             modelBuilder.Entity<User>().HasKey(x => x.UserId);
+            modelBuilder.Entity<Customer>().HasKey(x => x.CustomerId);
             modelBuilder.Entity<Warehouse>().HasKey(x => x.WarehouseId);
             modelBuilder.Entity<ProductWarehouse>().HasKey(x => x.ProductWarehouse_Id);
         }

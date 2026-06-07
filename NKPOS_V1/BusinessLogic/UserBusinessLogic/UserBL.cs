@@ -1,5 +1,7 @@
 
 using Newtonsoft.Json;
+using System.Diagnostics;
+using System.Net.NetworkInformation;
 
 namespace NKPOS_V1.BusinessLogic.UserBusinessLogic
 {
@@ -23,12 +25,23 @@ namespace NKPOS_V1.BusinessLogic.UserBusinessLogic
 
         public async Task<ApiResponseModel> RegisterUserAsync(UserModel model)
         {
+            var currentUserRole = Enum.Parse<EnumUserRole>(_contextAccessor.HttpContext?.Items["UserRole"] as string);
+            var targetUserRole = Enum.Parse<EnumUserRole>(model.Role);
             var validationResponse = ValidateRegisterUser(model);
 
             if (validationResponse != null)
             {
                 return validationResponse;
             }
+
+            #region Validate Create Account Level Permission
+
+            if (!UserCreatePermission.CanCreate(currentUserRole, targetUserRole))
+            {
+                return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest,
+                    ResponseMessageUtils.CannotCreateSameLevelUser);
+            }
+            #endregion
 
             #region Check Password Policy
             var passwordPolicyResponse = await _passwordPolicyApiService.CheckPasswordPolicy(model.Password);
@@ -86,7 +99,45 @@ namespace NKPOS_V1.BusinessLogic.UserBusinessLogic
             responseModel.baseResponseModel.RespCode = EnumStatusCode.Success;
             responseModel.baseResponseModel.RespMessage = ResponseMessageUtils.LoginSuccess;
             return responseModel;
+        }
 
+        public async Task<ApiResponseModel> UpdateUser(UserModel model)
+        {
+            var validationResult = ValidateUser(model.UserId);
+            if (validationResult.baseResponseModel.RespCode != EnumStatusCode.Success)
+            {
+                return validationResult;
+            }
+            return await _userService.UpdateUser(model);
+        }
+
+        public async Task<ApiResponseModel> InActiveUser(int userId, bool status)
+        {
+            var validationResult = ValidateUser(userId);
+            if (validationResult.baseResponseModel.RespCode != EnumStatusCode.Success)
+            {
+                return validationResult;
+            }
+            return await _userService.InActiveUser(userId, status);
+        }
+
+        public async Task<ApiResponseModel> DeleteUser(int userId)
+        {
+            var validationResult = ValidateUser(userId);
+            if (validationResult.baseResponseModel.RespCode != EnumStatusCode.Success)
+            {
+                return validationResult;
+            }
+            return await _userService.DeleteUser(userId);
+        }
+
+        private ApiResponseModel ValidateUser(int userId)
+        {
+            if (userId == 0)
+            {
+                return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.RequiredUserId);
+            }
+            return ResponseBuilder.CreateResponse(EnumStatusCode.Success, ResponseMessageUtils.Success);
         }
 
         private ApiResponseModel? ValidateRegisterUser(UserModel? model)

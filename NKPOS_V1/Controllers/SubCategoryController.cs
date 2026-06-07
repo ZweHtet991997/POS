@@ -35,7 +35,7 @@ namespace NKPOS_V1.Controllers
             return StatusCode(200, await _subCategoryBL.UpdateSubCategoryAsync(model));
         }
 
-        [HttpDelete("api/v1/subcategory/{subCategoryId}")]
+        [HttpDelete("api/v1/subcategory")]
         public async Task<IActionResult> DeleteSubCategory(int subCategoryId)
         {
             return StatusCode(200, await _subCategoryBL.DeleteSubCategoryAsync(subCategoryId));

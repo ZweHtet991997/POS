@@ -35,7 +35,7 @@ namespace NKPOS_V1.Controllers
             return StatusCode(200, await _businessBL.UpdateBusinessAsync(model));
         }
 
-        [HttpDelete("api/v1/business/{businessId}")]
+        [HttpDelete("api/v1/business")]
         public async Task<IActionResult> DeleteBusiness(int businessId)
         {
             return StatusCode(200, await _businessBL.DeleteBusinessAsync(businessId));

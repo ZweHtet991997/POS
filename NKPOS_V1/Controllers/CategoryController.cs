@@ -35,7 +35,7 @@ namespace NKPOS_V1.Controllers
             return StatusCode(200, await _categoryBL.UpdateCategoryAsync(model));
         }
 
-        [HttpDelete("api/v1/category/{categoryId}")]
+        [HttpDelete("api/v1/category")]
         public async Task<IActionResult> DeleteCategory(int categoryId)
         {
             return StatusCode(200, await _categoryBL.DeleteCategoryAsync(categoryId));

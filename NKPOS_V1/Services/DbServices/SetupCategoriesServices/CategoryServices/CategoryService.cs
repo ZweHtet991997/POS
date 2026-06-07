@@ -13,6 +13,10 @@ namespace NKPOS_V1.Services.DbServices.SetupCategoriesServices.CategoryServices
         {
             try
             {
+                if (await CheckCategoryDuplicate(model.CategoryName))
+                {
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.Conflict, ResponseMessageUtils.DuplicateCategory(model.CategoryName));
+                }
                 await _context.Categories.AddAsync(model.ToEntity());
                 await _context.SaveChangesAsync();
 
@@ -22,6 +26,12 @@ namespace NKPOS_V1.Services.DbServices.SetupCategoriesServices.CategoryServices
             {
                 return ResponseBuilder.CreateResponse(EnumStatusCode.InternalServerError, ex.Message);
             }
+        }
+
+        private async Task<bool> CheckCategoryDuplicate(string categoryName)
+        {
+            bool isDuplicate = await _context.Categories.AnyAsync(c => c.CategoryName.ToLower() == categoryName.ToLower());
+            return isDuplicate;
         }
 
         public async Task<CategoryListResponseModel> GetAllCategoriesAsync()
@@ -86,7 +96,10 @@ namespace NKPOS_V1.Services.DbServices.SetupCategoriesServices.CategoryServices
                 {
                     return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, "Category not found.");
                 }
-
+                if (await CheckCategoryDuplicate(model.CategoryName))
+                {
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.Conflict, ResponseMessageUtils.DuplicateCategory(model.CategoryName));
+                }
                 model.ToEntity(category);
                 _context.Categories.Update(category);
                 await _context.SaveChangesAsync();
@@ -110,6 +123,16 @@ namespace NKPOS_V1.Services.DbServices.SetupCategoriesServices.CategoryServices
                     return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, "Category not found.");
                 }
 
+                if (await CheckExistSubCategoryWithCategory(categoryId))
+                {
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.CannotDeleteCategoryWihtSubCategory);
+                }
+
+                if (await CheckCategoryMappedWithProduct(categoryId))
+                {
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.CannotDeleteCategory);
+                }
+
                 _context.Categories.Remove(category);
                 await _context.SaveChangesAsync();
 
@@ -119,6 +142,25 @@ namespace NKPOS_V1.Services.DbServices.SetupCategoriesServices.CategoryServices
             {
                 return ResponseBuilder.CreateResponse(EnumStatusCode.InternalServerError, ex.Message);
             }
+        }
+
+        private async Task<bool> CheckCategoryMappedWithProduct(int categoryId)
+        {
+            return await (
+                from product in _context.Products
+                join subCategory in _context.SubCategories
+                    on product.SubCategoryId equals subCategory.SubCategoryId
+                where subCategory.CategoryId == categoryId
+                select product
+            ).AnyAsync();
+        }
+
+        private async Task<bool> CheckExistSubCategoryWithCategory(int categoryId)
+        {
+            return await (from categry in _context.Categories
+                          join subcategory in _context.SubCategories on categry.CategoryId equals subcategory.CategoryId
+                          where subcategory.CategoryId == categoryId
+                          select subcategory).AnyAsync();
         }
     }
 }

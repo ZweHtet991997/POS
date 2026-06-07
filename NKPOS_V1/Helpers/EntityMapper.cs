@@ -62,7 +62,7 @@ namespace NKPOS_V1.Helpers
             {
                 ProductId = model.ProductId,
                 BusinessId = model.BusinessId,
-                CategoryId = model.CategoryId,
+                //CategoryId = model.CategoryId,
                 SubCategoryId = model.SubCategoryId,
                 ProductName = model.ProductName,
                 Description = model.Description,
@@ -77,7 +77,7 @@ namespace NKPOS_V1.Helpers
 
         public static Product ToEntity(this ProductModel model, Product entity)
         {
-            entity.CategoryId = model.CategoryId ?? entity.CategoryId;
+            entity.SubCategoryId = model.SubCategoryId ?? entity.SubCategoryId;
             entity.ProductName = string.IsNullOrEmpty(model.ProductName) ? entity.ProductName : model.ProductName;
             entity.Description = string.IsNullOrEmpty(model.Description) ? entity.Description : model.Description;
             entity.UnitPrice = model.UnitPrice ?? entity.UnitPrice;
@@ -208,6 +208,7 @@ namespace NKPOS_V1.Helpers
                 WarehouseAddress = model.WarehouseAddress,
                 ManagerName = model.ManagerName,
                 PhoneNumber = model.PhoneNumber,
+                Description = model.Description,
                 LastUpdatedDate = GetMyanmarTime.GetCurrentMyanmarTime(),
                 IsActive = model.IsActive ?? true
             };
@@ -219,8 +220,31 @@ namespace NKPOS_V1.Helpers
             entity.WarehouseAddress = string.IsNullOrEmpty(model.WarehouseAddress) ? entity.WarehouseAddress : model.WarehouseAddress;
             entity.ManagerName = string.IsNullOrEmpty(model.ManagerName) ? entity.ManagerName : model.ManagerName;
             entity.PhoneNumber = string.IsNullOrEmpty(model.PhoneNumber) ? entity.PhoneNumber : model.PhoneNumber;
+            entity.Description = string.IsNullOrEmpty(model.Description) ? entity.Description : model.Description;
             entity.IsActive = model.IsActive ?? entity.IsActive;
             entity.LastUpdatedDate = GetMyanmarTime.GetCurrentMyanmarTime();
+            return entity;
+        }
+
+        public static Customer ToEntity(this CustomerModel model)
+        {
+            return new Customer
+            {
+                CustomerName = model.CustomerName,
+                Address = model.Address,
+                PhoneNumber = model.PhoneNumber,
+                CreatedBy = model.CreatedBy,
+                CreatedDate = GetMyanmarTime.GetCurrentMyanmarTime()
+            };
+        }
+
+        public static Customer ToEntity(this CustomerModel model, Customer entity)
+        {
+            entity.CustomerName = model.CustomerName ?? entity.CustomerName;
+            entity.PhoneNumber = model.PhoneNumber ?? entity.PhoneNumber;
+            entity.Address = model.Address ?? entity.Address;
+            entity.UpdatedBy = model.UpdatedBy;
+            entity.UpdatedDate = GetMyanmarTime.GetCurrentMyanmarTime();
             return entity;
         }
     }

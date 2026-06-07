@@ -35,7 +35,7 @@ namespace NKPOS_V1.Controllers
             return StatusCode(200, await _warehouseBL.UpdateWarehouseAsync(model));
         }
 
-        [HttpDelete("api/v1/warehouse/{warehouseId}")]
+        [HttpDelete("api/v1/warehouse")]
         public async Task<IActionResult> DeleteWarehouse(int warehouseId)
         {
             return StatusCode(200, await _warehouseBL.DeleteWarehouseAsync(warehouseId));

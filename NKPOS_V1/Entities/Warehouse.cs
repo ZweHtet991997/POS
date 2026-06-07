@@ -24,6 +24,10 @@ namespace NKPOS_V1.Entities
         [StringLength(50)]
         public string? PhoneNumber { get; set; }
 
+        [Column("Description")]
+        [StringLength(500)]
+        public string? Description { get; set; }
+
         [Column("LastUpdatedDate")]
         [StringLength(50)]
         public string? LastUpdatedDate { get; set; }

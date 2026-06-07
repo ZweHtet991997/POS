@@ -48,6 +48,7 @@ namespace NKPOS_V1.Services.DbServices.WarehouseServices
                         WarehouseName = w.WarehouseName,
                         WarehouseAddress = w.WarehouseAddress,
                         PhoneNumber = w.PhoneNumber,
+                        Description = w.Description,
                         ManagerName = w.ManagerName,
                         StockQuantity = pw.StockQuantity,
                         LastUpdatedDate = w.LastUpdatedDate,
@@ -133,6 +134,8 @@ namespace NKPOS_V1.Services.DbServices.WarehouseServices
                 return ResponseBuilder.CreateResponse(EnumStatusCode.InternalServerError, ex.Message);
             }
         }
+
+        //public async Task<ApiResponseModel> WarehouseTransfer()
 
         public async Task<ApiResponseModel> DeleteWarehouseAsync(int warehouseId)
         {

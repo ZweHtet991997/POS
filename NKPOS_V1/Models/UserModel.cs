@@ -15,7 +15,13 @@
     public class UserListResponseModel
     {
         public BaseResponseModel baseResponseModel { get; set; } = new BaseResponseModel();
-        public List<UserResponseModel> UserList { get; set; } = new List<UserResponseModel>();
+        public List<UserResponseModel> DataLst { get; set; } = new List<UserResponseModel>();
+        public int TotalUserCount { get; set; }
+        public int AdminCount { get; set; }
+        //public int ManagerCount { get; set; }
+        public int CashierCount { get; set; }
+        public int ActiveUserCount { get; set; }
+
     }
 
     public class UserResponseModel

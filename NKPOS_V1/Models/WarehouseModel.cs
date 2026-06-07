@@ -9,6 +9,7 @@
         public int? StockQuantity { get; set; }
         public string? ManagerName { get; set; }
         public string? PhoneNumber { get; set; }
+        public string? Description { get; set; }
         public string? LastUpdatedDate { get; set; }
         public bool? IsActive { get; set; }
     }
@@ -29,6 +30,13 @@
         public int? StockQuantity { get; set; }
         public string? ManagerName { get; set; }
         public string? PhoneNumber { get; set; }
+        public string? Description { get; set; }
         public string? LastUpdatedDate { get; set; }
+    }
+
+    public class WarehouseTransferModel
+    {
+        public int FromWarehouseId { get; set; }
+        public int ToWarehouseId { get; set; }
     }
 }

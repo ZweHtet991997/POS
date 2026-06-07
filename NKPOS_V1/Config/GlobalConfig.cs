@@ -29,3 +29,6 @@ global using NKPOS_V1.BusinessLogic.UserBusinessLogic;
 global using NKPOS_V1.BusinessLogic.BusinessBusinessLogic;
 global using NKPOS_V1.BusinessLogic.WarehouseBusinessLogic;
 global using NKPOS_V1.Services.DbServices.ProductServices;
+global using NKPOS_V1.BusinessLogic.ProductBusinessLogic;
+global using NKPOS_V1.Services.DbServices.CustomerServices;
+global using NKPOS_V1.BusinessLogic.CustomerBusinessLogic;

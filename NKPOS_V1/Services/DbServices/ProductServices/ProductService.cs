@@ -20,16 +20,16 @@ namespace NKPOS_V1.Services.DbServices.ProductServices
             var transaction = await _context.Database.BeginTransactionAsync();
             try
             {
-                bool categoryExists = true;
+                bool subCategoryExists = true;
 
-                if (model.CategoryId.HasValue)
+                if (model.SubCategoryId.HasValue)
                 {
-                    categoryExists = await _context.Categories.AnyAsync(x => x.CategoryId == model.CategoryId.Value);
+                    subCategoryExists = await _context.SubCategories.AnyAsync(x => x.SubCategoryId == model.SubCategoryId.Value);
                 }
 
-                if (!categoryExists)
+                if (!subCategoryExists)
                 {
-                    return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, ResponseMessageUtils.CategoryNotFound);
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, ResponseMessageUtils.SubCategoryNotFound);
                 }
 
                 string businessName = await _context.Businesses.Where(b => b.BusinessId == model.BusinessId).Select(b => b.BusinessName).FirstOrDefaultAsync();
@@ -240,12 +240,12 @@ namespace NKPOS_V1.Services.DbServices.ProductServices
                     return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, "Product not found.");
                 }
 
-                if (model.CategoryId.HasValue)
+                if (model.SubCategoryId.HasValue)
                 {
-                    bool categoryExists = await _context.Categories.AnyAsync(x => x.CategoryId == model.CategoryId.Value);
-                    if (!categoryExists)
+                    bool subCategoryExists = await _context.SubCategories.AnyAsync(x => x.SubCategoryId == model.SubCategoryId.Value);
+                    if (!subCategoryExists)
                     {
-                        return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, ResponseMessageUtils.CategoryNotFound);
+                        return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, ResponseMessageUtils.SubCategoryNotFound);
                     }
                 }
 

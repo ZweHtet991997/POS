@@ -17,6 +17,8 @@
         public const string BusinessNotFound = "Business not found.";
         public const string FileNotFound = "File not found.";
         public const string CategoryNotFound = "No category data found.";
+        public const string UserNotFound = "User not found.";
+        public const string RequiredUserId = "User Id Required";
         public const string SubCategoryNotFound = "No sub category data found.";
         public const string FailedToCreateDirectory = "public constFailed to Create Directory";
         public const string InvalidFile = "Invalid File";
@@ -25,6 +27,18 @@
         public const string FileRequired = "Required file to upload";
         public const string PathRequired = "Invalid File path or File Path missing.";
         public const string CannotCreateSameLevelUser = "You cannot create same user role.Please contact your administartor.";
+        public const string CannotDeleteCategory = "You cannot delete this category because it is already mapped with existing products.";
+        public const string CannotDeleteCategoryWihtSubCategory = "You cannot delete this category because it is already mapped with subcategory.";
+        public const string CannotDeleteSubCategory = "You cannot delete this sub-category because it is already mapped with existing products.";
+        public static string DuplicateCategory(string categoryName)
+        {
+            return $"Category Name {categoryName} already exists. Please choose a different name.";
+        }
+
+        public static string DuplicateSubCategory(string subCategoryName)
+        {
+            return $"sub Category Name {subCategoryName} already exists. Please choose a different name.";
+        }
 
         public static string EmailAlreadyExist(string email)
         {

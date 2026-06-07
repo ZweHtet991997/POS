@@ -1,4 +1,3 @@
-using NKPOS_V1.BusinessLogic.ProductBusinessLogic;
 
 namespace NKPOS_V1
 {
@@ -29,6 +28,9 @@ namespace NKPOS_V1
 
                 .AddScoped<IProductBL, ProductBL>()
                 .AddScoped<IProductService, ProductService>()
+
+                .AddScoped<ICustomerBL, CustomerBL>()
+                .AddScoped<ICustomerService, CustomerService>()
 
                 .AddScoped<IFileUploadServices, FileUploadServices>()
                 .AddScoped<IFluentFTPService, FluentFTPService>()

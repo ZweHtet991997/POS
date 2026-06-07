@@ -55,7 +55,7 @@ namespace NKPOS_V1.BusinessLogic.SubCategoryBusinessLogic
 
         private ApiResponseModel? ValidateCreateSubCategory(SubCategoryModel? model)
         {
-            if (model == null || model.CategoryId <= 0 || string.IsNullOrWhiteSpace(model.SubCategoryName))
+            if (model == null || model.CategoryId <= 0)
             {
                 return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.BadRequest);
             }
@@ -65,7 +65,7 @@ namespace NKPOS_V1.BusinessLogic.SubCategoryBusinessLogic
 
         private ApiResponseModel? ValidateUpdateSubCategory(SubCategoryModel? model)
         {
-            if (model.CategoryId <= 0 || string.IsNullOrWhiteSpace(model.SubCategoryName))
+            if (model.CategoryId <= 0)
             {
                 return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.BadRequest);
             }
