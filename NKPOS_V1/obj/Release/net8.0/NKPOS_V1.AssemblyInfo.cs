@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NKPOS_V1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b8e5241045c183d4de6924a2a5f74a768c3a19c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bbe1a2fe3b8f232c210297125829c5e6ecd86e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("NKPOS_V1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NKPOS_V1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

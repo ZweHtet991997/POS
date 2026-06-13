@@ -31,6 +31,9 @@ namespace NKPOS_V1.Entities
         [StringLength(50)]
         public string? Role { get; set; }
 
+        [Column("Company")]
+        public int? Company { get; set; }
+
         [Column("IsActive")]
         public bool? IsActive { get; set; }
 

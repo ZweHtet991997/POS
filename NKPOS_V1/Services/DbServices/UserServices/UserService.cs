@@ -40,6 +40,8 @@
                     from user in _context.Users.AsNoTracking()
                     join business in _context.Businesses.AsNoTracking()
                         on user.Business_Id equals business.BusinessId
+                    join company in _context.Company.AsNoTracking()
+                        on user.Company equals company.CompanyId
                     where user.IsActive == true
                     orderby user.UserId
                     select new UserResponseModel
@@ -51,6 +53,8 @@
                         Email = user.Email,
                         PhoneNumber = user.PhoneNumber,
                         Role = user.Role,
+                        CompanyId = company.CompanyId,
+                        CompanyName = company.CompanyName,
                         IsActive = user.IsActive
                     })
                     .ToListAsync();

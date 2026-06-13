@@ -40,5 +40,11 @@ namespace NKPOS_V1.Controllers
         {
             return StatusCode(200, await _warehouseBL.DeleteWarehouseAsync(warehouseId));
         }
+
+        [HttpGet("api/v1/warehouse/to-transfer")]
+        public async Task<IActionResult> GetWarehouseTransferList([FromQuery] int? warehouseId)
+        {
+            return StatusCode(200, await _warehouseBL.GetWarehouseTransferListAsync(warehouseId));
+        }
     }
 }

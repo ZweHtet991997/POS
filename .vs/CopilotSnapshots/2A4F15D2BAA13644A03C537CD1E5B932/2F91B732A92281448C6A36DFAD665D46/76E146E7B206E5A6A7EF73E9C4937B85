@@ -1,0 +1,12 @@
+﻿namespace NKPOS_V1.Services.DbServices.CompanyServices
+{
+    public class CompanyService
+    {
+        private readonly EFDBContext _context;
+
+        public CompanyService(EFDBContext context)
+        {
+            _context = context;
+        }
+    }
+}

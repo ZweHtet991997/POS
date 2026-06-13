@@ -25,7 +25,7 @@ namespace NKPOS_V1.BusinessLogic.UserBusinessLogic
 
         public async Task<ApiResponseModel> RegisterUserAsync(UserModel model)
         {
-            var currentUserRole = Enum.Parse<EnumUserRole>(_contextAccessor.HttpContext?.Items["UserRole"] as string);
+            var currentUserRole = Enum.Parse<EnumUserRole>(_contextAccessor.HttpContext?.Items["Role"] as string);
             var targetUserRole = Enum.Parse<EnumUserRole>(model.Role);
             var validationResponse = ValidateRegisterUser(model);
 

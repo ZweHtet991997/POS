@@ -1,4 +1,7 @@
 
+using NKPOS_V1.BusinessLogic.CompanyBusinessLogic;
+using NKPOS_V1.Services.DbServices.CompanyServices;
+
 namespace NKPOS_V1
 {
     public static class RegistryService
@@ -19,6 +22,9 @@ namespace NKPOS_V1
 
                 .AddScoped<IBusinessBL, BusinessBL>()
                 .AddScoped<IBusinessService, BusinessService>()
+
+                .AddScoped<ICompanyBL, CompanyBL>()
+                .AddScoped<ICompanyService, CompanyService>()
 
                 .AddScoped<ISubCategoryBL, SubCategoryBL>()
                 .AddScoped<ISubCategoryService, SubCategoryService>()

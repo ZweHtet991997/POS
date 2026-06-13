@@ -43,25 +43,25 @@
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.BusinessController",
-    "Method": "GetBusinessById",
-    "RelativePath": "api/v1/business/{businessId}",
-    "HttpMethod": "GET",
+    "Method": "DeleteBusiness",
+    "RelativePath": "api/v1/business",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "businessId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.BusinessController",
-    "Method": "DeleteBusiness",
+    "Method": "GetBusinessById",
     "RelativePath": "api/v1/business/{businessId}",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -117,6 +117,22 @@
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.CategoryController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/v1/category",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CategoryController",
     "Method": "GetCategoryById",
     "RelativePath": "api/v1/category/{categoryId}",
     "HttpMethod": "GET",
@@ -132,17 +148,133 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NKPOS_V1.Controllers.CategoryController",
-    "Method": "DeleteCategory",
-    "RelativePath": "api/v1/category/{categoryId}",
+    "ContainingType": "NKPOS_V1.Controllers.CompanyController",
+    "Method": "CreateCompany",
+    "RelativePath": "api/v1/company",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NKPOS_V1.Models.CompanyModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CompanyController",
+    "Method": "GetAllCompanies",
+    "RelativePath": "api/v1/company",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CompanyController",
+    "Method": "UpdateCompany",
+    "RelativePath": "api/v1/company",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NKPOS_V1.Models.CompanyModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CompanyController",
+    "Method": "DeleteCompany",
+    "RelativePath": "api/v1/company",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "categoryId",
+        "Name": "companyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CompanyController",
+    "Method": "GetCompanyById",
+    "RelativePath": "api/v1/company/{companyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyId",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CustomerController",
+    "Method": "CreateCustomerAsync",
+    "RelativePath": "api/v1/customer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NKPOS_V1.Models.CustomerModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CustomerController",
+    "Method": "GetCustomerListAsync",
+    "RelativePath": "api/v1/customer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CustomerController",
+    "Method": "UpdateCustomerAsync",
+    "RelativePath": "api/v1/customer",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NKPOS_V1.Models.CustomerModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.CustomerController",
+    "Method": "DeleteCustomerAsync",
+    "RelativePath": "api/v1/customer",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -337,25 +469,25 @@
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.ProductController",
-    "Method": "GetProductById",
-    "RelativePath": "api/v1/product/{productId}",
-    "HttpMethod": "GET",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/v1/product",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "productId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.ProductController",
-    "Method": "DeleteProduct",
+    "Method": "GetProductById",
     "RelativePath": "api/v1/product/{productId}",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -411,25 +543,25 @@
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.SubCategoryController",
-    "Method": "GetSubCategoryById",
-    "RelativePath": "api/v1/subcategory/{subCategoryId}",
-    "HttpMethod": "GET",
+    "Method": "DeleteSubCategory",
+    "RelativePath": "api/v1/subcategory",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "subCategoryId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.SubCategoryController",
-    "Method": "DeleteSubCategory",
+    "Method": "GetSubCategoryById",
     "RelativePath": "api/v1/subcategory/{subCategoryId}",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -455,6 +587,69 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/v1/user/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.UserController",
+    "Method": "InActiveUser",
+    "RelativePath": "api/v1/user/inactive",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/v1/user/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NKPOS_V1.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.UserController",
+    "Method": "GetUserListAsync",
+    "RelativePath": "api/v1/userlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -501,6 +696,22 @@
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.WarehouseController",
+    "Method": "DeleteWarehouse",
+    "RelativePath": "api/v1/warehouse",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "warehouseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.WarehouseController",
     "Method": "GetWarehouseById",
     "RelativePath": "api/v1/warehouse/{warehouseId}",
     "HttpMethod": "GET",
@@ -517,16 +728,16 @@
   },
   {
     "ContainingType": "NKPOS_V1.Controllers.WarehouseController",
-    "Method": "DeleteWarehouse",
-    "RelativePath": "api/v1/warehouse/{warehouseId}",
-    "HttpMethod": "DELETE",
+    "Method": "GetWarehouseTransferList",
+    "RelativePath": "api/v1/warehouse/transfer",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "warehouseId",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

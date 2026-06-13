@@ -26,6 +26,11 @@ namespace NKPOS_V1.BusinessLogic.WarehouseBusinessLogic
             return await _warehouseService.GetWarehouseByIdAsync(warehouseId);
         }
 
+        public async Task<WarehouseTransferModel> GetWarehouseTransferListAsync(int? warehouseId = null)
+        {
+            return await _warehouseService.GetWarehouseTransferListAsync(warehouseId);
+        }
+
         public async Task<ApiResponseModel> UpdateWarehouseAsync(WarehouseModel model)
         {
             var validation = ValidateUpdate(model);

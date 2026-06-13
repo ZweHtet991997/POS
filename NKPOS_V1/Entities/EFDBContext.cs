@@ -16,6 +16,7 @@
         public DbSet<Customer> Customers => Set<Customer>();
         public DbSet<Warehouse> Warehouses => Set<Warehouse>();
         public DbSet<ProductWarehouse> ProductWarehouse => Set<ProductWarehouse>();
+        public DbSet<CompanyEntity> Company => Set<CompanyEntity>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,6 +32,7 @@
             modelBuilder.Entity<Customer>().HasKey(x => x.CustomerId);
             modelBuilder.Entity<Warehouse>().HasKey(x => x.WarehouseId);
             modelBuilder.Entity<ProductWarehouse>().HasKey(x => x.ProductWarehouse_Id);
+            modelBuilder.Entity<CompanyEntity>().HasKey(x => x.CompanyId);
         }
     }
 }

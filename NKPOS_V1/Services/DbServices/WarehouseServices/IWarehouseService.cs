@@ -7,6 +7,7 @@ namespace NKPOS_V1.Services.DbServices.WarehouseServices
         Task<ApiResponseModel> CreateWarehouseAsync(WarehouseModel model);
         Task<WarehouseListResponseModel> GetAllWarehousesAsync();
         Task<WarehouseResponseModel> GetWarehouseByIdAsync(int warehouseId);
+        Task<WarehouseTransferModel> GetWarehouseTransferListAsync(int? warehouseId = null);
         Task<ApiResponseModel> UpdateWarehouseAsync(WarehouseModel model);
         Task<ApiResponseModel> DeleteWarehouseAsync(int warehouseId);
     }

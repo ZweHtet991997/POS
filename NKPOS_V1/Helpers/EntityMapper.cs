@@ -181,7 +181,8 @@ namespace NKPOS_V1.Helpers
             {
                 UserName = model.UserName,
                 Business_Id = model.Business_Id,
-                Role = EnumUserRole.SuperAdmin.ToString(),
+                Role = model.Role,
+                Company = model.Company,
                 Email = model.Email,
                 Password = model.Password,
                 PhoneNumber = model.PhoneNumber,
@@ -196,6 +197,7 @@ namespace NKPOS_V1.Helpers
             entity.UserName = string.IsNullOrEmpty(model.UserName) ? entity.UserName : model.UserName;
             entity.Email = string.IsNullOrEmpty(model.Email) ? entity.Email : model.Email;
             entity.PhoneNumber = string.IsNullOrEmpty(model.PhoneNumber) ? entity.PhoneNumber : model.PhoneNumber;
+            entity.Company = string.IsNullOrEmpty(model.Company.ToString()) ? entity.Company : model.Company;
             entity.IsActive = model.IsActive ?? entity.IsActive;
             return entity;
         }

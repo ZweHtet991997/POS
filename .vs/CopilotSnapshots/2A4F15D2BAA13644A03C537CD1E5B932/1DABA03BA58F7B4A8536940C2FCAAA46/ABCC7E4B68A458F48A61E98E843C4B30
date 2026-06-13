@@ -1,0 +1,354 @@
+﻿namespace NKPOS_V1.Services.DbServices.WarehouseServices
+{
+    public class WarehouseService : IWarehouseService
+    {
+        private readonly EFDBContext _context;
+
+        public WarehouseService(EFDBContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<ApiResponseModel> CreateWarehouseAsync(WarehouseModel model)
+        {
+            try
+            {
+                await _context.Warehouses.AddAsync(model.ToEntity());
+
+                await _context.SaveChangesAsync();
+                return ResponseBuilder.CreateResponse(EnumStatusCode.Success, ResponseMessageUtils.Success);
+            }
+            catch (Exception ex)
+            {
+                return ResponseBuilder.CreateResponse(EnumStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        public async Task<WarehouseListResponseModel> GetAllWarehousesAsync()
+        {
+            var responseModel = new WarehouseListResponseModel();
+
+            try
+            {
+                var warehouseData = await (
+                    from w in _context.Warehouses
+
+                    join pw in _context.ProductWarehouse
+                        on w.WarehouseId equals pw.Warehouse_Id into wpw
+                    from pw in wpw.DefaultIfEmpty()
+
+                    join p in _context.Products
+                        on pw.Product_Id equals p.ProductId into pwp
+                    from p in pwp.DefaultIfEmpty()
+
+                    join sc in _context.SubCategories
+                        on p.SubCategoryId equals sc.SubCategoryId into psc
+                    from sc in psc.DefaultIfEmpty()
+
+                    join c in _context.Categories
+                        on sc.CategoryId equals c.CategoryId into scc
+                    from c in scc.DefaultIfEmpty()
+
+                    where w.IsActive == true
+
+                    select new
+                    {
+                        w.WarehouseId,
+                        w.WarehouseName,
+                        w.WarehouseAddress,
+                        w.ManagerName,
+                        w.PhoneNumber,
+                        w.Description,
+                        w.LastUpdatedDate,
+
+                        ProductId = p != null ? p.ProductId : 0,
+                        ProductName = p != null ? p.ProductName : null,
+
+                        SubCategoryId = sc != null ? sc.SubCategoryId : 0,
+                        SubCategoryName = sc != null ? sc.SubCategoryName : null,
+
+                        CategoryId = c != null ? c.CategoryId : 0,
+                        CategoryName = c != null ? c.CategoryName : null,
+
+                        StockQuantity = pw != null ? pw.StockQuantity : 0
+                    }
+                ).ToListAsync();
+
+                responseModel.DataLst = warehouseData
+                    .GroupBy(x => new
+                    {
+                        x.WarehouseId,
+                        x.WarehouseName,
+                        x.WarehouseAddress,
+                        x.ManagerName,
+                        x.PhoneNumber,
+                        x.Description,
+                        x.LastUpdatedDate
+                    })
+                    .Select(g => new WarehouseResponseModel
+                    {
+                        WarehouseId = g.Key.WarehouseId,
+                        WarehouseName = g.Key.WarehouseName,
+                        WarehouseAddress = g.Key.WarehouseAddress,
+                        ManagerName = g.Key.ManagerName,
+                        PhoneNumber = g.Key.PhoneNumber,
+                        Description = g.Key.Description,
+                        LastUpdatedDate = g.Key.LastUpdatedDate,
+
+                        ProductCount = g.Count(x => x.ProductId > 0),
+
+                        TotalStockQuantity = g.Sum(x => x.StockQuantity),
+
+                        LowStockCount = g.Count(x =>
+                            x.ProductId > 0 &&
+                            x.StockQuantity > 0 &&
+                            x.StockQuantity <= 10
+                        ),
+
+                        ProductLst = g
+                            .Where(x => x.ProductId > 0)
+                            .Select(x => new WarehouseProductResponseModel
+                            {
+                                ProductId = x.ProductId,
+                                ProductName = x.ProductName,
+
+                                SubCategoryId = x.SubCategoryId,
+                                SubCategoryName = x.SubCategoryName,
+
+                                CategoryId = x.CategoryId,
+                                CategoryName = x.CategoryName,
+
+                                StockQuantity = x.StockQuantity,
+
+                                StockLevel = x.StockQuantity <= 0
+                                    ? "OutOfStock"
+                                    : x.StockQuantity <= 10
+                                        ? "Low"
+                                        : "OK"
+                            })
+                            .ToList()
+                    })
+                    .ToList();
+
+                responseModel.BaseResponseModel.RespCode = EnumStatusCode.Success;
+                responseModel.BaseResponseModel.RespMessage = ResponseMessageUtils.Success;
+            }
+            catch (Exception ex)
+            {
+                responseModel.BaseResponseModel.RespCode = EnumStatusCode.InternalServerError;
+                responseModel.BaseResponseModel.RespMessage = ex.Message;
+            }
+
+            return responseModel;
+        }
+
+        public async Task<WarehouseResponseModel?> GetWarehouseByIdAsync(int warehouseId)
+        {
+            try
+            {
+                var warehouseData = await (
+                    from w in _context.Warehouses
+
+                    join pw in _context.ProductWarehouse
+                        on w.WarehouseId equals pw.Warehouse_Id into wpw
+                    from pw in wpw.DefaultIfEmpty()
+
+                    join p in _context.Products
+                        on pw.Product_Id equals p.ProductId into pwp
+                    from p in pwp.DefaultIfEmpty()
+
+                    join sc in _context.SubCategories
+                        on p.SubCategoryId equals sc.SubCategoryId into psc
+                    from sc in psc.DefaultIfEmpty()
+
+                    join c in _context.Categories
+                        on sc.CategoryId equals c.CategoryId into scc
+                    from c in scc.DefaultIfEmpty()
+
+                    where w.IsActive == true
+                          && w.WarehouseId == warehouseId
+
+                    select new
+                    {
+                        w.WarehouseId,
+                        w.WarehouseName,
+                        w.WarehouseAddress,
+                        w.ManagerName,
+                        w.PhoneNumber,
+                        w.Description,
+                        w.LastUpdatedDate,
+
+                        ProductId = p != null ? p.ProductId : 0,
+                        ProductName = p != null ? p.ProductName : null,
+
+                        SubCategoryId = sc != null ? sc.SubCategoryId : 0,
+                        SubCategoryName = sc != null ? sc.SubCategoryName : null,
+
+                        CategoryId = c != null ? c.CategoryId : 0,
+                        CategoryName = c != null ? c.CategoryName : null,
+
+                        StockQuantity = pw != null ? pw.StockQuantity : 0,
+                        ProductWarehouseLastUpdatedDate = pw != null ? pw.LastUpdatedDate : null
+                    }
+                ).ToListAsync();
+
+                var warehouse = warehouseData
+                    .GroupBy(x => new
+                    {
+                        x.WarehouseId,
+                        x.WarehouseName,
+                        x.WarehouseAddress,
+                        x.ManagerName,
+                        x.PhoneNumber,
+                        x.Description,
+                        x.LastUpdatedDate
+                    })
+                    .Select(g => new WarehouseResponseModel
+                    {
+                        WarehouseId = g.Key.WarehouseId,
+                        WarehouseName = g.Key.WarehouseName,
+                        WarehouseAddress = g.Key.WarehouseAddress,
+                        ManagerName = g.Key.ManagerName,
+                        PhoneNumber = g.Key.PhoneNumber,
+                        Description = g.Key.Description,
+                        LastUpdatedDate = g.Key.LastUpdatedDate,
+
+                        ProductCount = g.Count(x => x.ProductId > 0),
+                        TotalStockQuantity = g.Sum(x => x.StockQuantity),
+                        LowStockCount = g.Count(x =>
+                            x.ProductId > 0 &&
+                            x.StockQuantity > 0 &&
+                            x.StockQuantity <= 10
+                        ),
+
+                        ProductLst = g
+                            .Where(x => x.ProductId > 0)
+                            .Select(x => new WarehouseProductResponseModel
+                            {
+                                ProductId = x.ProductId,
+                                ProductName = x.ProductName,
+
+                                SubCategoryId = x.SubCategoryId,
+                                SubCategoryName = x.SubCategoryName,
+
+                                CategoryId = x.CategoryId,
+                                CategoryName = x.CategoryName,
+
+                                StockQuantity = x.StockQuantity,
+                                StockLevel = x.StockQuantity <= 0
+                                    ? "OutOfStock"
+                                    : x.StockQuantity <= 10
+                                        ? "Low"
+                                        : "OK"
+                            })
+                            .ToList()
+                    })
+                    .FirstOrDefault();
+
+                return warehouse;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<WarehouseTransferModel> GetWarehouseTransferListAsync(int? warehouseId = null)
+        {
+            var response = new WarehouseTransferModel();
+            try
+            {
+                var query = from pw in _context.ProductWarehouse
+                            join p in _context.Products on pw.Product_Id equals p.ProductId into pp
+                            from p in pp.DefaultIfEmpty()
+                            join w in _context.Warehouses on pw.Warehouse_Id equals w.WarehouseId into ww
+                            from w in ww.DefaultIfEmpty()
+                            join sc in _context.SubCategories on p.SubCategoryId equals sc.SubCategoryId into scj
+                            from sc in scj.DefaultIfEmpty()
+                            join c in _context.Categories on sc.CategoryId equals c.CategoryId into cj
+                            from c in cj.DefaultIfEmpty()
+                            where (warehouseId == null || pw.Warehouse_Id == warehouseId)
+                            select new
+                            {
+                                p.ProductId,
+                                ProductName = p != null ? p.ProductName : null,
+                                SKU = p != null ? p.ProductId.ToString() : null, // placeholder if no SKU field
+                                WarehouseName = w != null ? w.WarehouseName : null,
+                                pw.StockQuantity,
+                                CategoryName = c != null ? c.CategoryName : null,
+                                SubCategoryName = sc != null ? sc.SubCategoryName : null
+                            };
+
+                var list = await query.ToListAsync();
+
+                response.ProductsToTransfer = list.Select(x => new WarehouseProductResponseModel
+                {
+                    ProductId = x.ProductId,
+                    ProductName = x.ProductName,
+                    SKU = x.SKU,
+                    WarehouseName = x.WarehouseName,
+                    StockQuantity = x.StockQuantity,
+                    StockLevel = x.StockQuantity <= 0 ? "OutOfStock" : x.StockQuantity <= 10 ? "Low" : "OK",
+                    SubCategoryName = x.SubCategoryName,
+                    CategoryName = x.CategoryName
+                }).ToList();
+
+                response.WarehouseHeadModel.TotalUnits = response.ProductsToTransfer.Sum(p => p.StockQuantity ?? 0);
+                response.WarehouseHeadModel.TotalProducts = response.ProductsToTransfer.Select(p => p.ProductId).Distinct().Count();
+                response.WarehouseHeadModel.WarehouseName = warehouseId == null ? "All Warehouses" : response.ProductsToTransfer.FirstOrDefault()?.WarehouseName ?? "";
+
+                response.baseResponseModel.RespCode = EnumStatusCode.Success;
+                response.baseResponseModel.RespMessage = ResponseMessageUtils.Success;
+            }
+            catch (Exception ex)
+            {
+                response.baseResponseModel.RespCode = EnumStatusCode.InternalServerError;
+                response.baseResponseModel.RespMessage = ex.Message;
+            }
+
+            return response;
+        }
+
+        public async Task<ApiResponseModel> UpdateWarehouseAsync(WarehouseModel model)
+        {
+            try
+            {
+                var warehouse = await _context.Warehouses.FirstOrDefaultAsync(x => x.WarehouseId == model.WarehouseId);
+                if (warehouse == null)
+                {
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, "Warehouse not found.");
+                }
+                _context.Warehouses.Update(model.ToEntity(warehouse));
+                await _context.SaveChangesAsync();
+
+                return ResponseBuilder.CreateResponse(EnumStatusCode.Success, ResponseMessageUtils.Success);
+            }
+            catch (Exception ex)
+            {
+                return ResponseBuilder.CreateResponse(EnumStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+
+        public async Task<ApiResponseModel> DeleteWarehouseAsync(int warehouseId)
+        {
+            try
+            {
+                var wh = await _context.Warehouses.FirstOrDefaultAsync(x => x.WarehouseId == warehouseId);
+                if (wh == null)
+                {
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, "Warehouse not found.");
+                }
+
+                _context.Warehouses.Remove(wh);
+                await _context.SaveChangesAsync();
+
+                return ResponseBuilder.CreateResponse(EnumStatusCode.Success, ResponseMessageUtils.Success);
+            }
+            catch (Exception ex)
+            {
+                return ResponseBuilder.CreateResponse(EnumStatusCode.InternalServerError, ex.Message);
+            }
+        }
+    }
+}
