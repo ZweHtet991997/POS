@@ -184,12 +184,12 @@ namespace NKPOS_V1.Services.DbServices.SetupCategoriesServices.SubCategoryServic
 
         private async Task<bool> CheckSubCategoryMappedWithProduct(int subCategoryId)
         {
-            return await (
-                from product in _context.Products
-                join subCategory in _context.SubCategories
-                    on product.SubCategoryId equals subCategory.SubCategoryId
-                select product
-            ).AnyAsync();
+            var dataResult = await _context.Products.FirstOrDefaultAsync(p => p.SubCategoryId == subCategoryId);
+            if (dataResult is not null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -9,10 +9,12 @@
         public const string FailedToRegister = "Failed to Register.Please try again";
         public const string LoginFailed = "Invalid Email or Password.Please try again";
         public const string RequestOTPSuccess = "OTP Send Successfully.Please check your inbox";
+        public const string RequiredPhoneNumber = "Phone number is required";
         public const string UnAuthorizeAccessEndpoint = "You are not unauthorized to access this endpoint";
         public const string InvalidToken = "Invalid token or token must not be null";
         public const string BusinessNameRequired = "Required Business Name";
         public const string BusinessIdRequired = "Required Business ID";
+        public const string InvalidPhoneNumber = "Invalid Phone Number";
 
         public const string BusinessNotFound = "Business not found.";
         public const string FileNotFound = "File not found.";
@@ -43,6 +45,11 @@
         public static string EmailAlreadyExist(string email)
         {
             return $"Your email {email} is already registered in the system";
+        }
+
+        public static string DuplicateCustomerName(string customerName)
+        {
+            return $"Customer Name {customerName} already exists. Please choose a different name.";
         }
 
         public static string PhoneNoAlreadyExist(string phoneNo)

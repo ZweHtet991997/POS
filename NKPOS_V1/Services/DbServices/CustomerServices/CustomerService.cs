@@ -14,6 +14,10 @@
             //string methodName = $"{GetType().Name}/{nameof(RegisterUserAsync)}";
             try
             {
+                if (CheckUserNameDuplicate(model.CustomerName))
+                {
+                    return ResponseBuilder.CreateResponse(EnumStatusCode.Conflict, ResponseMessageUtils.DuplicateCustomerName(model.CustomerName));
+                }
                 //_commonLogService.LogInfo("Create New User", "", methodName, JsonConvert.SerializeObject(model));
                 User user = new User();
                 await _context.Customers.AddAsync(model.ToEntity());
@@ -101,6 +105,16 @@
                 //_commonLogService.LogError(ex, "Create New User", "", "UserService/RegisterUserAsync");
                 return ResponseBuilder.CreateResponse(EnumStatusCode.InternalServerError, ex.Message);
             }
+        }
+
+        private bool CheckUserNameDuplicate(string customerName)
+        {
+            var userName = _context.Customers.Where(x => x.CustomerName == customerName).FirstOrDefault();
+            if (userName is not null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

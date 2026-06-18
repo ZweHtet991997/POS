@@ -46,7 +46,7 @@ namespace NKPOS_V1.BusinessLogic.ProductBusinessLogic
 
         private ApiResponseModel? ValidateCreateProduct(ProductModel? model)
         {
-            if (model == null || string.IsNullOrWhiteSpace(model.ProductName) || model.UnitPrice == null)
+            if (model == null || string.IsNullOrWhiteSpace(model.ProductName))
             {
                 return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.BadRequest);
             }
@@ -56,7 +56,7 @@ namespace NKPOS_V1.BusinessLogic.ProductBusinessLogic
 
         private ApiResponseModel? ValidateUpdateProduct(ProductModel? model)
         {
-            if (model == null || model.ProductId <= 0 || string.IsNullOrWhiteSpace(model.ProductName) || model.UnitPrice == null)
+            if (model == null || model.ProductId <= 0)
             {
                 return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.BadRequest);
             }

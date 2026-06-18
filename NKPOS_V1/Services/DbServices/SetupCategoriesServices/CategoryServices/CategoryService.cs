@@ -123,10 +123,10 @@ namespace NKPOS_V1.Services.DbServices.SetupCategoriesServices.CategoryServices
                     return ResponseBuilder.CreateResponse(EnumStatusCode.NotFound, "Category not found.");
                 }
 
-                if (await CheckExistSubCategoryWithCategory(categoryId))
-                {
-                    return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.CannotDeleteCategoryWihtSubCategory);
-                }
+                //if (await CheckExistSubCategoryWithCategory(categoryId))
+                //{
+                //    return ResponseBuilder.CreateResponse(EnumStatusCode.BadRequest, ResponseMessageUtils.CannotDeleteCategoryWihtSubCategory);
+                //}
 
                 if (await CheckCategoryMappedWithProduct(categoryId))
                 {

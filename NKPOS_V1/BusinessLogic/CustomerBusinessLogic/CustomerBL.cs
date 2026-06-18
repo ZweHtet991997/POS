@@ -1,4 +1,6 @@
-﻿namespace NKPOS_V1.BusinessLogic.CustomerBusinessLogic
+﻿using System.Text.RegularExpressions;
+
+namespace NKPOS_V1.BusinessLogic.CustomerBusinessLogic
 {
     public class CustomerBL : ICustomerBL
     {
@@ -14,6 +16,13 @@
         public async Task<ApiResponseModel> CreateCustomerAsync(CustomerModel model)
         {
             model.CreatedBy = Convert.ToInt32(_contextAccessor.HttpContext?.Items["UserId"]);
+            if (!Regex.IsMatch(model.PhoneNumber, @"^\+?\d+$"))
+            {
+                return ResponseBuilder.CreateResponse(
+                    EnumStatusCode.BadRequest,
+                    ResponseMessageUtils.InvalidPhoneNumber
+                );
+            }
             return await _customerService.CreateCustomerAsync(model);
         }
 
