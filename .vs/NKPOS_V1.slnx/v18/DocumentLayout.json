@@ -1,97 +1,181 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Myprojects\\POSApi\\NKPOS_V1\\",
+  "WorkspaceRootPath": "C:\\MyProjects\\POS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\saleservices\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\saleservices\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\models\\warehousemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\models\\warehousemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\entities\\saleitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\entities\\saleitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\services\\dbservices\\warehouseservices\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\warehouseservices\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\entities\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\entities\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\services\\dbservices\\warehouseservices\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\warehouseservices\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\models\\salemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\models\\salemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\businesslogic\\warehousebusinesslogic\\iwarehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\warehousebusinesslogic\\iwarehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyProjects\\POS\\NKPOS_V1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NKPOS_V1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\businesslogic\\warehousebusinesslogic\\warehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\warehousebusinesslogic\\warehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\customerbusinesslogic\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\customerbusinesslogic\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\endpoints\\adminaccessendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\endpoints\\adminaccessendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\services\\dbservices\\userservices\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\userservices\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\businesslogic\\userbusinesslogic\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\userbusinesslogic\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\authenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\authenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\helpers\\entitymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\helpers\\entitymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\services\\dbservices\\companyservices\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\companyservices\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\businesslogic\\companybusinesslogic\\companybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\companybusinesslogic\\companybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\businesslogic\\businessbusinesslogic\\businessbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\businessbusinesslogic\\businessbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\entities\\companyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\entities\\companyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\models\\companymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\models\\companymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\entities\\efdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\entities\\efdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\entities\\efdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\registryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\helpers\\entitymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\helpers\\entitymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\customerservices\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\customerservices\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\productservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\productservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\models\\saleitemsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\models\\saleitemsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\subcategorybusinesslogic\\subcategorybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\subcategorybusinesslogic\\subcategorybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\setupcategoriesservices\\subcategoryservices\\subcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\setupcategoriesservices\\subcategoryservices\\subcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\utils\\responsemessageutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\utils\\responsemessageutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\productbusinesslogic\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\productbusinesslogic\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\config\\ftpconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\config\\ftpconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\setupcategoriesservices\\categoryservices\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\setupcategoriesservices\\categoryservices\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\categorybusinesslogic\\categorybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\categorybusinesslogic\\categorybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\companyservices\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\companyservices\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\config\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\config\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\models\\warehousemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\models\\warehousemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\warehouseservices\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\warehouseservices\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\warehouseservices\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\warehouseservices\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\warehousebusinesslogic\\iwarehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\warehousebusinesslogic\\iwarehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\warehousebusinesslogic\\warehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\warehousebusinesslogic\\warehousebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\endpoints\\adminaccessendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\endpoints\\adminaccessendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\userservices\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\userservices\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\userbusinesslogic\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\userbusinesslogic\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\authenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\authenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\companybusinesslogic\\companybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\companybusinesslogic\\companybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\businessbusinesslogic\\businessbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\businessbusinesslogic\\businessbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\entities\\companyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\entities\\companyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\models\\companymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\models\\companymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\registryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\registryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\services\\dbservices\\companyservices\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\services\\dbservices\\companyservices\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\services\\dbservices\\companyservices\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\posapi\\nkpos_v1\\nkpos_v1\\businesslogic\\companybusinesslogic\\icompanybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|c:\\myprojects\\pos\\nkpos_v1\\businesslogic\\companybusinesslogic\\icompanybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4CA9ABD-0673-BEEC-08B6-F926A849B89F}|NKPOS_V1\\NKPOS_V1.csproj|solutionrelative:nkpos_v1\\businesslogic\\companybusinesslogic\\icompanybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -102,23 +186,318 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaleService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\SaleServices\\SaleService.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\SaleServices\\SaleService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\SaleServices\\SaleService.cs",
+              "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\SaleServices\\SaleService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T07:19:42.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EntityMapper.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Helpers\\EntityMapper.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Helpers\\EntityMapper.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Helpers\\EntityMapper.cs",
+              "RelativeToolTip": "NKPOS_V1\\Helpers\\EntityMapper.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAD4v2AAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T12:47:25.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CustomerBusinessLogic\\CustomerBL.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\CustomerBusinessLogic\\CustomerBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CustomerBusinessLogic\\CustomerBL.cs",
+              "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\CustomerBusinessLogic\\CustomerBL.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T10:19:16.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "NKPOS_V1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T06:59:05.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaleModel.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\SaleModel.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Models\\SaleModel.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\SaleModel.cs",
+              "RelativeToolTip": "NKPOS_V1\\Models\\SaleModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T03:58:55.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EFDBContext.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\EFDBContext.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Entities\\EFDBContext.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\EFDBContext.cs",
+              "RelativeToolTip": "NKPOS_V1\\Entities\\EFDBContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T12:32:46.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\Sale.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Entities\\Sale.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\Sale.cs",
+              "RelativeToolTip": "NKPOS_V1\\Entities\\Sale.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAhwBEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T07:04:50.977Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SaleItems.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\SaleItems.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Entities\\SaleItems.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\SaleItems.cs",
+              "RelativeToolTip": "NKPOS_V1\\Entities\\SaleItems.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T04:00:34.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SaleController.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\SaleController.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Controllers\\SaleController.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\SaleController.cs",
+              "RelativeToolTip": "NKPOS_V1\\Controllers\\SaleController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T07:40:35.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\CustomerServices\\CustomerService.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\CustomerServices\\CustomerService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\CustomerServices\\CustomerService.cs",
+              "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\CustomerServices\\CustomerService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwGoAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T10:11:22.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "NKPOS_V1\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:12:42.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SaleItemsModel.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\SaleItemsModel.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Models\\SaleItemsModel.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\SaleItemsModel.cs",
+              "RelativeToolTip": "NKPOS_V1\\Models\\SaleItemsModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T04:00:24.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\ProductModel.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Models\\ProductModel.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\ProductModel.cs",
+              "RelativeToolTip": "NKPOS_V1\\Models\\ProductModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T03:59:57.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\ProductServices\\ProductService.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\ProductServices\\ProductService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\ProductServices\\ProductService.cs",
+              "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\ProductServices\\ProductService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:12:22.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\ProductBusinessLogic\\ProductBL.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\ProductBusinessLogic\\ProductBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\ProductBusinessLogic\\ProductBL.cs",
+              "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\ProductBusinessLogic\\ProductBL.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwCIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:12:16.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SubCategoryBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\SubCategoryBusinessLogic\\SubCategoryBL.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\SubCategoryBusinessLogic\\SubCategoryBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\SubCategoryBusinessLogic\\SubCategoryBL.cs",
+              "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\SubCategoryBusinessLogic\\SubCategoryBL.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAtwDUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:09:13.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SubCategoryService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\SubCategoryServices\\SubCategoryService.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\SubCategoryServices\\SubCategoryService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\SubCategoryServices\\SubCategoryService.cs",
+              "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\SubCategoryServices\\SubCategoryService.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAtwLYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:08:05.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ResponseMessageUtils.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Utils\\ResponseMessageUtils.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Utils\\ResponseMessageUtils.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Utils\\ResponseMessageUtils.cs",
+              "RelativeToolTip": "NKPOS_V1\\Utils\\ResponseMessageUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T10:15:54.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FTPConfig.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Config\\FTPConfig.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Config\\FTPConfig.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Config\\FTPConfig.cs",
+              "RelativeToolTip": "NKPOS_V1\\Config\\FTPConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:27:58.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\CategoryServices\\CategoryService.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\CategoryServices\\CategoryService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\CategoryServices\\CategoryService.cs",
+              "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\SetupCategoriesServices\\CategoryServices\\CategoryService.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAmwIQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:09:13.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NKPOS_V1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-18T08:09:19.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CategoryBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CategoryBusinessLogic\\CategoryBL.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\CategoryBusinessLogic\\CategoryBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CategoryBusinessLogic\\CategoryBL.cs",
+              "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\CategoryBusinessLogic\\CategoryBL.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T13:15:01.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Config\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "NKPOS_V1\\Config\\DatabaseConfig.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Config\\DatabaseConfig.cs",
+              "RelativeToolTip": "NKPOS_V1\\Config\\DatabaseConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T13:14:22.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "WarehouseModel.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Models\\WarehouseModel.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\WarehouseModel.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Models\\WarehouseModel.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Models\\WarehouseModel.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\WarehouseModel.cs",
               "RelativeToolTip": "NKPOS_V1\\Models\\WarehouseModel.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAUwCoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,11 +505,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 28,
               "Title": "IWarehouseBL.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\IWarehouseBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\IWarehouseBL.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\IWarehouseBL.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\IWarehouseBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\IWarehouseBL.cs",
               "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\IWarehouseBL.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAApwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -138,11 +517,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 42,
               "Title": "ICompanyService.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\ICompanyService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\ICompanyService.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\CompanyServices\\ICompanyService.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\ICompanyService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\ICompanyService.cs",
               "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\CompanyServices\\ICompanyService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -150,11 +529,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 38,
               "Title": "BusinessBL.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\BusinessBusinessLogic\\BusinessBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\BusinessBusinessLogic\\BusinessBL.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\BusinessBusinessLogic\\BusinessBL.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\BusinessBusinessLogic\\BusinessBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\BusinessBusinessLogic\\BusinessBL.cs",
               "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\BusinessBusinessLogic\\BusinessBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -162,11 +541,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "CompanyService.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\CompanyService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\CompanyService.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\CompanyServices\\CompanyService.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\CompanyService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\CompanyServices\\CompanyService.cs",
               "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\CompanyServices\\CompanyService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -174,11 +553,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 27,
               "Title": "WarehouseService.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\WarehouseService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\WarehouseService.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\WarehouseServices\\WarehouseService.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\WarehouseService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\WarehouseService.cs",
               "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\WarehouseServices\\WarehouseService.cs",
               "ViewState": "AgIAAFcBAAAAAAAAAAAqwAIBAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,11 +565,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 24,
               "Title": "WarehouseController.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Controllers\\WarehouseController.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\WarehouseController.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Controllers\\WarehouseController.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Controllers\\WarehouseController.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\WarehouseController.cs",
               "RelativeToolTip": "NKPOS_V1\\Controllers\\WarehouseController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAEwDAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -199,11 +578,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
               "Title": "IWarehouseService.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\IWarehouseService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\IWarehouseService.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\WarehouseServices\\IWarehouseService.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\IWarehouseService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\WarehouseServices\\IWarehouseService.cs",
               "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\WarehouseServices\\IWarehouseService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAUwAsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -211,11 +590,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 43,
               "Title": "ICompanyBL.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\ICompanyBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\ICompanyBL.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\ICompanyBL.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\ICompanyBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\ICompanyBL.cs",
               "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\ICompanyBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -223,11 +602,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 29,
               "Title": "WarehouseBL.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\WarehouseBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\WarehouseBL.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\WarehouseBL.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\WarehouseBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\WarehouseBL.cs",
               "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\WarehouseBusinessLogic\\WarehouseBL.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -235,11 +614,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 36,
               "Title": "CompanyBL.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\CompanyBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\CompanyBL.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\CompanyBL.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\CompanyBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\CompanyBL.cs",
               "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\CompanyBusinessLogic\\CompanyBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -247,35 +626,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 32,
               "Title": "UserBL.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\UserBusinessLogic\\UserBL.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\UserBusinessLogic\\UserBL.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\BusinessLogic\\UserBusinessLogic\\UserBL.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\BusinessLogic\\UserBusinessLogic\\UserBL.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\BusinessLogic\\UserBusinessLogic\\UserBL.cs",
               "RelativeToolTip": "NKPOS_V1\\BusinessLogic\\UserBusinessLogic\\UserBL.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAYwEEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:14:12.879Z"
+              "WhenOpened": "2026-06-08T12:14:12.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 33,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\UserController.cs",
               "RelativeToolTip": "NKPOS_V1\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:14:12.873Z"
+              "WhenOpened": "2026-06-08T12:14:12.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "AdminAccessEndpoints.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Endpoints\\AdminAccessEndpoints.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Endpoints\\AdminAccessEndpoints.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Endpoints\\AdminAccessEndpoints.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Endpoints\\AdminAccessEndpoints.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Endpoints\\AdminAccessEndpoints.cs",
               "RelativeToolTip": "NKPOS_V1\\Endpoints\\AdminAccessEndpoints.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -283,35 +664,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EntityMapper.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Helpers\\EntityMapper.cs",
-              "RelativeDocumentMoniker": "NKPOS_V1\\Helpers\\EntityMapper.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Helpers\\EntityMapper.cs",
-              "RelativeToolTip": "NKPOS_V1\\Helpers\\EntityMapper.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAAALEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:47:25.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 31,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\UserServices\\UserService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\UserServices\\UserService.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Services\\DbServices\\UserServices\\UserService.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Services\\DbServices\\UserServices\\UserService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Services\\DbServices\\UserServices\\UserService.cs",
               "RelativeToolTip": "NKPOS_V1\\Services\\DbServices\\UserServices\\UserService.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAzwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T04:33:00.721Z"
+              "WhenOpened": "2026-06-08T04:33:00.721Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 34,
               "Title": "AuthenticationMiddleware.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\AuthenticationMiddleware.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\AuthenticationMiddleware.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\AuthenticationMiddleware.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\AuthenticationMiddleware.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\AuthenticationMiddleware.cs",
               "RelativeToolTip": "NKPOS_V1\\AuthenticationMiddleware.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAIwFsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -319,11 +689,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 37,
               "Title": "CompanyController.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Controllers\\CompanyController.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\CompanyController.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Controllers\\CompanyController.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Controllers\\CompanyController.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Controllers\\CompanyController.cs",
               "RelativeToolTip": "NKPOS_V1\\Controllers\\CompanyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAIwBAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -331,11 +701,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 35,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Entities\\User.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\User.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Entities\\User.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Entities\\User.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\User.cs",
               "RelativeToolTip": "NKPOS_V1\\Entities\\User.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowCIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -343,11 +713,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 41,
               "Title": "RegistryService.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\RegistryService.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\RegistryService.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\RegistryService.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\RegistryService.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\RegistryService.cs",
               "RelativeToolTip": "NKPOS_V1\\RegistryService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAASwCIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -355,11 +725,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 40,
               "Title": "CompanyModel.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Models\\CompanyModel.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\CompanyModel.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Models\\CompanyModel.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Models\\CompanyModel.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Models\\CompanyModel.cs",
               "RelativeToolTip": "NKPOS_V1\\Models\\CompanyModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -367,27 +737,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 39,
               "Title": "CompanyEntity.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Entities\\CompanyEntity.cs",
+              "DocumentMoniker": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\CompanyEntity.cs",
               "RelativeDocumentMoniker": "NKPOS_V1\\Entities\\CompanyEntity.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Entities\\CompanyEntity.cs",
+              "ToolTip": "C:\\MyProjects\\POS\\NKPOS_V1\\Entities\\CompanyEntity.cs",
               "RelativeToolTip": "NKPOS_V1\\Entities\\CompanyEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T11:53:00.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EFDBContext.cs",
-              "DocumentMoniker": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Entities\\EFDBContext.cs",
-              "RelativeDocumentMoniker": "NKPOS_V1\\Entities\\EFDBContext.cs",
-              "ToolTip": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\Entities\\EFDBContext.cs",
-              "RelativeToolTip": "NKPOS_V1\\Entities\\EFDBContext.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAmwCIAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:32:46.544Z"
             }
           ]
         }

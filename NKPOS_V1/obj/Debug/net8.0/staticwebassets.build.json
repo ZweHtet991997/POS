@@ -1,15 +1,1 @@
-<<<<<<< HEAD
 {"Version":1,"Hash":"Ihsfv7ahWr1vNwcs0bJsnjX4GHK6dBkjYZGbwgCzeHA=","Source":"NKPOS_V1","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
-=======
-{
-  "Version": 1,
-  "Hash": "zi9vhan8XZUBo6n1kKB9kRJ3A9GepY5L7p9WPJkF2Ks=",
-  "Source": "NKPOS_V1",
-  "BasePath": "_content/NKPOS_V1",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
->>>>>>> d217d83 (Product integration in sale done)

@@ -28,16 +28,7 @@
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.ClientModel": "1.0.0",
-<<<<<<< HEAD
           "System.Memory.Data": "1.0.2"
-=======
-          "System.Diagnostics.DiagnosticSource": "8.0.0",
-          "System.Memory.Data": "1.0.2",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.7.2",
-          "System.Threading.Tasks.Extensions": "4.5.4"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net6.0/Azure.Core.dll": {
@@ -51,14 +42,7 @@
           "Azure.Core": "1.38.0",
           "Microsoft.Identity.Client": "4.73.1",
           "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
-<<<<<<< HEAD
           "System.Security.Cryptography.ProtectedData": "8.0.0"
-=======
-          "System.Memory": "4.5.4",
-          "System.Security.Cryptography.ProtectedData": "8.0.0",
-          "System.Text.Json": "4.7.2",
-          "System.Threading.Tasks.Extensions": "4.5.4"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {
@@ -91,10 +75,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "Microsoft.CSharp/4.5.0": {},
->>>>>>> d217d83 (Product integration in sale done)
       "Microsoft.Data.SqlClient/5.2.3": {
         "dependencies": {
           "Azure.Identity": "1.11.4",
@@ -164,48 +144,28 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-<<<<<<< HEAD
             "fileVersion": "5.2.0.0"
-=======
-            "fileVersion": "0.0.0.0"
->>>>>>> d217d83 (Product integration in sale done)
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-<<<<<<< HEAD
             "fileVersion": "5.2.0.0"
-=======
-            "fileVersion": "0.0.0.0"
->>>>>>> d217d83 (Product integration in sale done)
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-<<<<<<< HEAD
             "fileVersion": "5.2.0.0"
-=======
-            "fileVersion": "0.0.0.0"
->>>>>>> d217d83 (Product integration in sale done)
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-<<<<<<< HEAD
             "fileVersion": "5.2.0.0"
-=======
-            "fileVersion": "0.0.0.0"
->>>>>>> d217d83 (Product integration in sale done)
           }
         }
       },
       "Microsoft.EntityFrameworkCore/8.0.26": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.26",
-<<<<<<< HEAD
-=======
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.26",
->>>>>>> d217d83 (Product integration in sale done)
           "Microsoft.Extensions.Caching.Memory": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
@@ -224,17 +184,9 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Relational/8.0.26": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.26"
-=======
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.26": {},
-      "Microsoft.EntityFrameworkCore.Relational/8.0.26": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.26",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
@@ -246,12 +198,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer/8.0.26": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.3",
-<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore.Relational": "8.0.26"
-=======
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.26",
-          "System.Formats.Asn1": "8.0.2"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -260,27 +207,11 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.Extensions.Caching.Memory/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
           "Microsoft.Extensions.Options": "8.0.2"
-=======
-      "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
-      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.Caching.Memory/8.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
@@ -289,37 +220,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "Microsoft.Extensions.Configuration/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.Configuration.Binder/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.Configuration.FileExtensions/3.1.4": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Extensions.FileProviders.Physical": "3.1.4"
-        }
-      },
-      "Microsoft.Extensions.Configuration.Json/3.1.4": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.4"
-        }
-      },
->>>>>>> d217d83 (Product integration in sale done)
       "Microsoft.Extensions.DependencyInjection/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -347,37 +247,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "System.Diagnostics.DiagnosticSource": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Physical/3.1.4": {
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
-          "Microsoft.Extensions.FileSystemGlobbing": "3.1.4"
-        }
-      },
-      "Microsoft.Extensions.FileSystemGlobbing/3.1.4": {},
-      "Microsoft.Extensions.Hosting.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Diagnostics.Abstractions": "8.0.0",
-          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
-        }
-      },
->>>>>>> d217d83 (Product integration in sale done)
       "Microsoft.Extensions.Logging/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
@@ -404,12 +273,7 @@
       },
       "Microsoft.Extensions.Options/8.0.2": {
         "dependencies": {
-<<<<<<< HEAD
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
-=======
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Options.dll": {
@@ -418,26 +282,9 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.Identity.Client/4.73.1": {
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "6.35.0"
-=======
-      "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        }
-      },
-      "Microsoft.Extensions.Primitives/8.0.0": {},
-      "Microsoft.Identity.Client/4.73.1": {
-        "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "6.35.0",
-          "System.Diagnostics.DiagnosticSource": "8.0.0"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net8.0/Microsoft.Identity.Client.dll": {
@@ -468,14 +315,7 @@
       },
       "Microsoft.IdentityModel.JsonWebTokens/6.35.0": {
         "dependencies": {
-<<<<<<< HEAD
           "Microsoft.IdentityModel.Tokens": "6.35.0"
-=======
-          "Microsoft.IdentityModel.Tokens": "6.35.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.7.2"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -521,13 +361,7 @@
       },
       "Microsoft.IdentityModel.Tokens/6.35.0": {
         "dependencies": {
-<<<<<<< HEAD
           "Microsoft.IdentityModel.Logging": "6.35.0"
-=======
-          "Microsoft.CSharp": "4.5.0",
-          "Microsoft.IdentityModel.Logging": "6.35.0",
-          "System.Security.Cryptography.Cng": "4.5.0"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
@@ -536,11 +370,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "Microsoft.NETCore.Platforms/1.1.0": {},
-      "Microsoft.NETCore.Targets/1.1.0": {},
->>>>>>> d217d83 (Product integration in sale done)
       "Microsoft.OpenApi/1.6.14": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -567,10 +396,6 @@
       },
       "RestClient/3.1024.23771": {
         "dependencies": {
-<<<<<<< HEAD
-=======
-          "Microsoft.Extensions.Configuration.Json": "3.1.4",
->>>>>>> d217d83 (Product integration in sale done)
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
           "Newtonsoft.Json": "12.0.3"
         },
@@ -640,10 +465,6 @@
       "Serilog.Extensions.Hosting/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-<<<<<<< HEAD
-=======
-          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
->>>>>>> d217d83 (Product integration in sale done)
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
           "Serilog": "4.1.0",
           "Serilog.Extensions.Logging": "8.0.0"
@@ -680,10 +501,6 @@
       },
       "Serilog.Settings.Configuration/8.0.4": {
         "dependencies": {
-<<<<<<< HEAD
-=======
-          "Microsoft.Extensions.Configuration.Binder": "8.0.0",
->>>>>>> d217d83 (Product integration in sale done)
           "Microsoft.Extensions.DependencyModel": "8.0.2",
           "Serilog": "4.1.0"
         },
@@ -730,11 +547,6 @@
       "Serilog.Sinks.MSSqlServer/8.2.2": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.3",
-<<<<<<< HEAD
-=======
-          "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
->>>>>>> d217d83 (Product integration in sale done)
           "Microsoft.Identity.Client": "4.73.1",
           "Serilog": "4.1.0",
           "System.Configuration.ConfigurationManager": "8.0.1"
@@ -748,10 +560,6 @@
       },
       "Swashbuckle.AspNetCore/6.6.2": {
         "dependencies": {
-<<<<<<< HEAD
-=======
-          "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
->>>>>>> d217d83 (Product integration in sale done)
           "Swashbuckle.AspNetCore.Swagger": "6.6.2",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.6.2"
@@ -789,12 +597,7 @@
       },
       "System.ClientModel/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
           "System.Memory.Data": "1.0.2"
-=======
-          "System.Memory.Data": "1.0.2",
-          "System.Text.Json": "4.7.2"
->>>>>>> d217d83 (Product integration in sale done)
         },
         "runtime": {
           "lib/net6.0/System.ClientModel.dll": {
@@ -815,10 +618,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "System.Diagnostics.DiagnosticSource/8.0.0": {},
->>>>>>> d217d83 (Product integration in sale done)
       "System.Diagnostics.EventLog/8.0.1": {
         "runtime": {
           "lib/net8.0/System.Diagnostics.EventLog.dll": {
@@ -827,15 +626,6 @@
           }
         },
         "runtimeTargets": {
-<<<<<<< HEAD
-=======
-          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          },
->>>>>>> d217d83 (Product integration in sale done)
           "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
             "rid": "win",
             "assetType": "runtime",
@@ -844,10 +634,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "System.Formats.Asn1/8.0.2": {},
->>>>>>> d217d83 (Product integration in sale done)
       "System.IdentityModel.Tokens.Jwt/6.35.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
@@ -860,16 +646,7 @@
           }
         }
       },
-<<<<<<< HEAD
       "System.Memory.Data/1.0.2": {
-=======
-      "System.Memory/4.5.4": {},
-      "System.Memory.Data/1.0.2": {
-        "dependencies": {
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.7.2"
-        },
->>>>>>> d217d83 (Product integration in sale done)
         "runtime": {
           "lib/netstandard2.0/System.Memory.Data.dll": {
             "assemblyVersion": "1.0.2.0",
@@ -877,16 +654,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "System.Numerics.Vectors/4.5.0": {},
-      "System.Runtime/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
-        }
-      },
->>>>>>> d217d83 (Product integration in sale done)
       "System.Runtime.Caching/8.0.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "8.0.1"
@@ -906,10 +673,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
-      "System.Security.Cryptography.Cng/4.5.0": {},
->>>>>>> d217d83 (Product integration in sale done)
       "System.Security.Cryptography.ProtectedData/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -917,21 +680,7 @@
             "fileVersion": "8.0.23.53103"
           }
         }
-<<<<<<< HEAD
       }
-=======
-      },
-      "System.Text.Encoding/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
-      "System.Text.Encodings.Web/4.7.2": {},
-      "System.Text.Json/4.7.2": {},
-      "System.Threading.Tasks.Extensions/4.5.4": {}
->>>>>>> d217d83 (Product integration in sale done)
     }
   },
   "libraries": {
@@ -975,16 +724,6 @@
       "path": "microsoft.bcl.asyncinterfaces/1.1.1",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "Microsoft.CSharp/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "Microsoft.Data.SqlClient/5.2.3": {
       "type": "package",
       "serviceable": true,
@@ -1013,16 +752,6 @@
       "path": "microsoft.entityframeworkcore.abstractions/8.0.26",
       "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.26.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.26": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uKIwY5fy7Xk3BrWMxryYyzQuzQxmhQADjZqXanXa27vE3vll8QHcUZuI1J1vyPu0bzyBITGdw9nJKDCsJmIHjg==",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.26",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.26.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "Microsoft.EntityFrameworkCore.Relational/8.0.26": {
       "type": "package",
       "serviceable": true,
@@ -1037,23 +766,6 @@
       "path": "microsoft.entityframeworkcore.sqlserver/8.0.26",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.8.0.26.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
-      "path": "microsoft.extensions.apidescription.server/6.0.5",
-      "hashPath": "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
-      "path": "microsoft.extensions.caching.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "Microsoft.Extensions.Caching.Memory/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1061,44 +773,6 @@
       "path": "microsoft.extensions.caching.memory/8.0.1",
       "hashPath": "microsoft.extensions.caching.memory.8.0.1.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "Microsoft.Extensions.Configuration/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0J/9YNXTMWSZP2p2+nvl8p71zpSwokZXZuJW+VjdErkegAnFdO1XlqtA62SJtgVYHdKu3uPxJHcMR/r35HwFBA==",
-      "path": "microsoft.extensions.configuration/8.0.0",
-      "hashPath": "microsoft.extensions.configuration.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3lE/iLSutpgX1CC0NOW70FJoGARRHbyKmG7dc0klnUZ9Dd9hS6N/POPWhKhMLCEuNN5nXEY5agmlFtH562vqhQ==",
-      "path": "microsoft.extensions.configuration.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.Binder/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-mBMoXLsr5s1y2zOHWmKsE9veDcx8h1x/c3rz4baEdQKTeDcmQAPNbB54Pi/lhFO3K431eEq6PFbMgLaa6PHFfA==",
-      "path": "microsoft.extensions.configuration.binder/8.0.0",
-      "hashPath": "microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.FileExtensions/3.1.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wgYJ6AxEuk7HkhUaiDwzX9LLVaeum5p8BS94xtMqgiCJ9Fxncy6z+jVHrkih+Ww6gBGbuPn5buu56MPWYlwBdg==",
-      "path": "microsoft.extensions.configuration.fileextensions/3.1.4",
-      "hashPath": "microsoft.extensions.configuration.fileextensions.3.1.4.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.Json/3.1.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PYSg1spPvu5V+qk3gpLdIKa0VHURlIAv1uInxkmIXUYbb3AlBk6wywlbFFUWf+CRWA62eD/LJnfpePODlbQ5CA==",
-      "path": "microsoft.extensions.configuration.json/3.1.4",
-      "hashPath": "microsoft.extensions.configuration.json.3.1.4.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "Microsoft.Extensions.DependencyInjection/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1120,44 +794,6 @@
       "path": "microsoft.extensions.dependencymodel/8.0.2",
       "hashPath": "microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JHYCQG7HmugNYUhOl368g+NMxYE/N/AiclCYRNlgCY9eVyiBkOHMwK4x60RYMxv9EL3+rmj1mqHvdCiPpC+D4Q==",
-      "path": "microsoft.extensions.diagnostics.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ZbaMlhJlpisjuWbvXr4LdAst/1XxH3vZ6A0BsgTphZ2L4PGuxRLz7Jr/S7mkAAnOn78Vu0fKhEgNF5JO3zfjqQ==",
-      "path": "microsoft.extensions.fileproviders.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Physical/3.1.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vxBVwWxczp+5dnZ6FoulhxCLYzRjp5tu64iAlGMJtN0w7XLBZoY+6FvAnCRZDdwCbhVbz5VUPsbYVlL+l3sDxQ==",
-      "path": "microsoft.extensions.fileproviders.physical/3.1.4",
-      "hashPath": "microsoft.extensions.fileproviders.physical.3.1.4.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileSystemGlobbing/3.1.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PGbPg8h8cUYXEovoeNvpHgdFhKnx/539E14zF1vxFz2V6cc1QmQGONbfVHEJcjbuyGyyiNyqgpPInymsVup7ow==",
-      "path": "microsoft.extensions.filesystemglobbing/3.1.4",
-      "hashPath": "microsoft.extensions.filesystemglobbing.3.1.4.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Hosting.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AG7HWwVRdCHlaA++1oKDxLsXIBxmDpMPb3VoyOoAghEWnkUvEAdYQUwnV4jJbAaa/nMYNiEh5ByoLauZBEiovg==",
-      "path": "microsoft.extensions.hosting.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "Microsoft.Extensions.Logging/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1179,23 +815,6 @@
       "path": "microsoft.extensions.options/8.0.2",
       "hashPath": "microsoft.extensions.options.8.0.2.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0f4DMRqEd50zQh+UyJc+/HiBsZ3vhAQALgdkcQEalSH1L2isdC7Yj54M3cyo5e+BeO5fcBQ7Dxly8XiBBcvRgw==",
-      "path": "microsoft.extensions.options.configurationextensions/8.0.0",
-      "hashPath": "microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Primitives/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
-      "path": "microsoft.extensions.primitives/8.0.0",
-      "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "Microsoft.Identity.Client/4.73.1": {
       "type": "package",
       "serviceable": true,
@@ -1252,23 +871,6 @@
       "path": "microsoft.identitymodel.tokens/6.35.0",
       "hashPath": "microsoft.identitymodel.tokens.6.35.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "Microsoft.NETCore.Platforms/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
-      "path": "microsoft.netcore.platforms/1.1.0",
-      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Targets/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
-      "path": "microsoft.netcore.targets/1.1.0",
-      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "Microsoft.OpenApi/1.6.14": {
       "type": "package",
       "serviceable": true,
@@ -1430,16 +1032,6 @@
       "path": "system.configuration.configurationmanager/8.0.1",
       "hashPath": "system.configuration.configurationmanager.8.0.1.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "System.Diagnostics.DiagnosticSource/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-c9xLpVz6PL9lp/djOWtk5KPDZq3cSYpmXoJQY524EOtuFl5z9ZtsotpsyrDW40U1DRnQSYvcPKEUV0X//u6gkQ==",
-      "path": "system.diagnostics.diagnosticsource/8.0.0",
-      "hashPath": "system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "System.Diagnostics.EventLog/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1447,16 +1039,6 @@
       "path": "system.diagnostics.eventlog/8.0.1",
       "hashPath": "system.diagnostics.eventlog.8.0.1.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "System.Formats.Asn1/8.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yUsFqNGa7tbwm5QOOnOR3VSoh8a0Yki39mTbhOnErdbg8hVSFtrK0EXerj286PXcegiF1LkE7lL++qqMZW5jIQ==",
-      "path": "system.formats.asn1/8.0.2",
-      "hashPath": "system.formats.asn1.8.0.2.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "System.IdentityModel.Tokens.Jwt/6.35.0": {
       "type": "package",
       "serviceable": true,
@@ -1464,16 +1046,6 @@
       "path": "system.identitymodel.tokens.jwt/6.35.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "System.Memory/4.5.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
-      "path": "system.memory/4.5.4",
-      "hashPath": "system.memory.4.5.4.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "System.Memory.Data/1.0.2": {
       "type": "package",
       "serviceable": true,
@@ -1481,23 +1053,6 @@
       "path": "system.memory.data/1.0.2",
       "hashPath": "system.memory.data.1.0.2.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "System.Numerics.Vectors/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
-      "path": "system.numerics.vectors/4.5.0",
-      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
-    },
-    "System.Runtime/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
-      "path": "system.runtime/4.3.0",
-      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "System.Runtime.Caching/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1505,53 +1060,12 @@
       "path": "system.runtime.caching/8.0.0",
       "hashPath": "system.runtime.caching.8.0.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
-    "System.Security.Cryptography.Cng/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
-      "path": "system.security.cryptography.cng/4.5.0",
-      "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
-    },
->>>>>>> d217d83 (Product integration in sale done)
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
       "path": "system.security.cryptography.protecteddata/8.0.0",
       "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
-<<<<<<< HEAD
-=======
-    },
-    "System.Text.Encoding/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
-      "path": "system.text.encoding/4.3.0",
-      "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
-    },
-    "System.Text.Encodings.Web/4.7.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-iTUgB/WtrZ1sWZs84F2hwyQhiRH6QNjQv2DkwrH+WP6RoFga2Q1m3f9/Q7FG8cck8AdHitQkmkXSY8qylcDmuA==",
-      "path": "system.text.encodings.web/4.7.2",
-      "hashPath": "system.text.encodings.web.4.7.2.nupkg.sha512"
-    },
-    "System.Text.Json/4.7.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
-      "path": "system.text.json/4.7.2",
-      "hashPath": "system.text.json.4.7.2.nupkg.sha512"
-    },
-    "System.Threading.Tasks.Extensions/4.5.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
-      "path": "system.threading.tasks.extensions/4.5.4",
-      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
->>>>>>> d217d83 (Product integration in sale done)
     }
   }
 }

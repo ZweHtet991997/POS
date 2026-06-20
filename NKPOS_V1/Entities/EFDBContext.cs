@@ -11,6 +11,7 @@
         public DbSet<SubCategory> SubCategories => Set<SubCategory>();
         public DbSet<Product> Products => Set<Product>();
         public DbSet<Sale> Sales => Set<Sale>();
+        public DbSet<SaleItem> SaleItems => Set<SaleItem>();
         public DbSet<TransferStockLog> TransferStockLogs => Set<TransferStockLog>();
         public DbSet<User> Users => Set<User>();
         public DbSet<Customer> Customers => Set<Customer>();
@@ -27,6 +28,7 @@
             modelBuilder.Entity<SubCategory>().HasKey(x => x.SubCategoryId);
             modelBuilder.Entity<Product>().HasKey(x => x.ProductId);
             modelBuilder.Entity<Sale>().HasKey(x => x.SalesId);
+            modelBuilder.Entity<SaleItem>().HasKey(x => x.SaleItemsId);
             modelBuilder.Entity<TransferStockLog>().HasKey(x => x.TransferId);
             modelBuilder.Entity<User>().HasKey(x => x.UserId);
             modelBuilder.Entity<Customer>().HasKey(x => x.CustomerId);

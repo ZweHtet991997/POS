@@ -18,6 +18,9 @@ public class Sale
     public string? CustomerName { get; set; }
 
     [StringLength(50)]
+    public string? SaleMode { get; set; }
+
+    [StringLength(50)]
     public string? SaleType { get; set; }
 
     [StringLength(50)]

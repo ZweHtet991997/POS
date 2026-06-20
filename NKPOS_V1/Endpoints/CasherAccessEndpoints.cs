@@ -6,7 +6,9 @@
         {
             return new List<string>
             {
-                "/api/v1/login"
+                "/api/v1/login",
+                "/api/v1/sale",
+                "/api/v1/sale/detail"
             };
         }
     }

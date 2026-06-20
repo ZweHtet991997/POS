@@ -729,6 +729,118 @@
         }
       }
     },
+    "/api/v1/sale": {
+      "post": {
+        "tags": [
+          "Sale"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaleModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaleModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaleModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Sale"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Sale"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaleModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaleModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaleModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Sale"
+        ],
+        "parameters": [
+          {
+            "name": "salesId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/sale/detail": {
+      "get": {
+        "tags": [
+          "Sale"
+        ],
+        "parameters": [
+          {
+            "name": "salesId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/subcategory": {
       "post": {
         "tags": [
@@ -1111,7 +1223,7 @@
         }
       }
     },
-    "/api/v1/warehouse/transfer": {
+    "/api/v1/warehouse/to-transfer": {
       "get": {
         "tags": [
           "Warehouse"
@@ -1279,6 +1391,166 @@
           },
           "password": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SaleItemsModel": {
+        "type": "object",
+        "properties": {
+          "saleItemsId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "salesId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "productId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "productName": {
+            "type": "string",
+            "nullable": true
+          },
+          "warehouseName": {
+            "type": "string",
+            "nullable": true
+          },
+          "saleQuantity": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "unitPrice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "discountPrice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalPrice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SaleModel": {
+        "type": "object",
+        "properties": {
+          "salesId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "saleNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "customerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "saleMode": {
+            "type": "string",
+            "nullable": true
+          },
+          "saleType": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "isCredit": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "discountType": {
+            "type": "string",
+            "nullable": true
+          },
+          "discountValue": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "discountAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "taxPercentage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "taxAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "subTotal": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "grandTotal": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "initialAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "paidAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "changeAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          },
+          "saleDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SaleItemsModel"
+            },
             "nullable": true
           }
         },

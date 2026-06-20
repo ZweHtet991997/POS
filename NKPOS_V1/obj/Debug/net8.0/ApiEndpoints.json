@@ -500,6 +500,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NKPOS_V1.Controllers.SaleController",
+    "Method": "CreateSale",
+    "RelativePath": "api/v1/sale",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NKPOS_V1.Models.SaleModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.SaleController",
+    "Method": "GetAllSales",
+    "RelativePath": "api/v1/sale",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.SaleController",
+    "Method": "UpdateSale",
+    "RelativePath": "api/v1/sale",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NKPOS_V1.Models.SaleModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.SaleController",
+    "Method": "DeleteSale",
+    "RelativePath": "api/v1/sale",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salesId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NKPOS_V1.Controllers.SaleController",
+    "Method": "GetSaleById",
+    "RelativePath": "api/v1/sale/detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salesId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NKPOS_V1.Controllers.SubCategoryController",
     "Method": "CreateSubCategory",
     "RelativePath": "api/v1/subcategory",
@@ -729,7 +803,7 @@
   {
     "ContainingType": "NKPOS_V1.Controllers.WarehouseController",
     "Method": "GetWarehouseTransferList",
-    "RelativePath": "api/v1/warehouse/transfer",
+    "RelativePath": "api/v1/warehouse/to-transfer",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

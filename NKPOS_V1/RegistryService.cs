@@ -38,6 +38,9 @@ namespace NKPOS_V1
                 .AddScoped<ICustomerBL, CustomerBL>()
                 .AddScoped<ICustomerService, CustomerService>()
 
+                .AddScoped<ISaleService, SaleService>()
+                .AddScoped<ISaleBL, SaleBL>()
+
                 .AddScoped<IFileUploadServices, FileUploadServices>()
                 .AddScoped<IFluentFTPService, FluentFTPService>()
 

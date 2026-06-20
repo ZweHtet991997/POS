@@ -4,6 +4,7 @@
     {
         public int SaleItemsId { get; set; }
         public int? SalesId { get; set; }
+        public int? ProductId { get; set; }
         public string? ProductName { get; set; }
         public string? WarehouseName { get; set; }
         public int? SaleQuantity { get; set; }

@@ -32,3 +32,5 @@ global using NKPOS_V1.Services.DbServices.ProductServices;
 global using NKPOS_V1.BusinessLogic.ProductBusinessLogic;
 global using NKPOS_V1.Services.DbServices.CustomerServices;
 global using NKPOS_V1.BusinessLogic.CustomerBusinessLogic;
+global using NKPOS_V1.Services.DbServices.SaleServices;
+global using NKPOS_V1.BusinessLogic.SaleBusinessLogic;

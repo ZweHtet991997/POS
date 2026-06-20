@@ -19,6 +19,8 @@
                 "/api/v1/warehouse/{warehouseId}",
                 "/api/v1/userlist",
                 "/api/v1/customer",
+                "/api/v1/sale",
+                "/api/v1/sale/detail",
                 "/api/v1/user/update",
                 "/api/v1/user/inactive",
                 "/api/v1/user/delete"

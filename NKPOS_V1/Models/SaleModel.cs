@@ -6,6 +6,7 @@
         public string? SaleNo { get; set; }
         public int? BusinessId { get; set; }
         public string? CustomerName { get; set; }
+        public string? SaleMode { get; set; }
         public string? SaleType { get; set; }
         public string? PaymentType { get; set; }
         public bool? IsCredit { get; set; }
@@ -20,6 +21,20 @@
         public int? PaidAmount { get; set; }
         public int? ChangeAmount { get; set; }
         public string? Remark { get; set; }
-        public List<SaleItem> SaleItems { get; set; } = new List<SaleItem>();
+        public string? SaleDate { get; set; }
+        public int? CreatedBy { get; set; }
+        public List<SaleItemsModel> Items { get; set; } = new List<SaleItemsModel>();
+    }
+
+    public class SaleResponseModel
+    {
+        public BaseResponseModel baseResponseModel { get; set; } = new BaseResponseModel();
+        public SaleModel? Data { get; set; }
+    }
+
+    public class SaleListResponseModel
+    {
+        public BaseResponseModel baseResponseModel { get; set; } = new BaseResponseModel();
+        public List<SaleModel> DataLst { get; set; } = new List<SaleModel>();
     }
 }
