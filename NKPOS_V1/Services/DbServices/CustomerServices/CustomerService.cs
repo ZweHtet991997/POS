@@ -14,12 +14,19 @@
             //string methodName = $"{GetType().Name}/{nameof(RegisterUserAsync)}";
             try
             {
+<<<<<<< HEAD
                 if (CheckUserNameDuplicate(model.CustomerName))
+=======
+                if (await CheckCustomerNameDuplicateAsync(model.CustomerName))
+>>>>>>> d217d83 (Product integration in sale done)
                 {
                     return ResponseBuilder.CreateResponse(EnumStatusCode.Conflict, ResponseMessageUtils.DuplicateCustomerName(model.CustomerName));
                 }
                 //_commonLogService.LogInfo("Create New User", "", methodName, JsonConvert.SerializeObject(model));
+<<<<<<< HEAD
                 User user = new User();
+=======
+>>>>>>> d217d83 (Product integration in sale done)
                 await _context.Customers.AddAsync(model.ToEntity());
                 await _context.SaveChangesAsync();
 
@@ -107,6 +114,7 @@
             }
         }
 
+<<<<<<< HEAD
         private bool CheckUserNameDuplicate(string customerName)
         {
             var userName = _context.Customers.Where(x => x.CustomerName == customerName).FirstOrDefault();
@@ -115,6 +123,19 @@
                 return true;
             }
             return false;
+=======
+        private async Task<bool> CheckCustomerNameDuplicateAsync(string customerName)
+        {
+            var normalizedCustomerName = customerName?.Trim().ToLower();
+            if (string.IsNullOrWhiteSpace(normalizedCustomerName))
+            {
+                return false;
+            }
+
+            return await _context.Customers.AnyAsync(x =>
+                x.CustomerName != null &&
+                x.CustomerName.Trim().ToLower() == normalizedCustomerName);
+>>>>>>> d217d83 (Product integration in sale done)
         }
     }
 }

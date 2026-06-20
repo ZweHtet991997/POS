@@ -3977,12 +3977,17 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "/Users/modem/.nuget/packages/": {}
+>>>>>>> d217d83 (Product integration in sale done)
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\NKPOS_V1.csproj",
       "projectName": "NKPOS_V1",
       "projectPath": "C:\\Myprojects\\POSApi\\NKPOS_V1\\NKPOS_V1\\NKPOS_V1.csproj",
@@ -3996,12 +4001,25 @@
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+      "projectUniqueName": "/Users/modem/Documents/OneBurma/POS/NKPOS-WebApp/server/NKPOS_V1/NKPOS_V1.csproj",
+      "projectName": "NKPOS_V1",
+      "projectPath": "/Users/modem/Documents/OneBurma/POS/NKPOS-WebApp/server/NKPOS_V1/NKPOS_V1.csproj",
+      "packagesPath": "/Users/modem/.nuget/packages/",
+      "outputPath": "/Users/modem/Documents/OneBurma/POS/NKPOS-WebApp/server/NKPOS_V1/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/modem/.nuget/NuGet/NuGet.Config"
+>>>>>>> d217d83 (Product integration in sale done)
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+<<<<<<< HEAD
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+=======
+>>>>>>> d217d83 (Product integration in sale done)
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4019,8 +4037,12 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
+<<<<<<< HEAD
       },
       "SdkAnalysisLevel": "10.0.200"
+=======
+      }
+>>>>>>> d217d83 (Product integration in sale done)
     },
     "frameworks": {
       "net8.0": {
@@ -4090,7 +4112,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/Users/modem/.dotnet/sdk/8.0.422/PortableRuntimeIdentifierGraph.json"
+>>>>>>> d217d83 (Product integration in sale done)
       }
     }
   }
