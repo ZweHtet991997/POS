@@ -16,7 +16,15 @@ namespace NKPOS_V1.BusinessLogic.CustomerBusinessLogic
         public async Task<ApiResponseModel> CreateCustomerAsync(CustomerModel model)
         {
             model.CreatedBy = Convert.ToInt32(_contextAccessor.HttpContext?.Items["UserId"]);
+<<<<<<< HEAD
             if (!Regex.IsMatch(model.PhoneNumber, @"^\+?\d+$"))
+=======
+            model.CustomerName = model.CustomerName?.Trim();
+            model.PhoneNumber = model.PhoneNumber?.Trim();
+            model.Address = model.Address?.Trim();
+
+            if (!string.IsNullOrWhiteSpace(model.PhoneNumber) && !Regex.IsMatch(model.PhoneNumber, @"^\+?\d+$"))
+>>>>>>> d217d83 (Product integration in sale done)
             {
                 return ResponseBuilder.CreateResponse(
                     EnumStatusCode.BadRequest,
